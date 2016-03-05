@@ -19,7 +19,7 @@ Requirements
 Installation
 --------------
 
-    git clone git://github.com/mnutt/hummingbird.git
+    git clone git://github.com/jimaek/hummingbird.git
     cd hummingbird
 
     # Use npm to install the dependencies
