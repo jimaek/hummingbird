@@ -123,12 +123,6 @@
                                    },
                                  });
 
-      $("#total h2.graph_title span.value").hummingbirdCount(socket,
-                                                             {
-                                                               from: "view_totals",
-                                                               every: 10
-                                                             });
-
       $("#active .value").hummingbirdActive(socket, { from: "active" });
 
       $("#demo").click(function(e) {
