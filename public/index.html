@@ -111,11 +111,12 @@
 
       $("#total").hummingbirdGraph(socket,
                                  {
-                                   ratePerSecond: 1,
+                                   every: 20,
+                                   ratePerSecond: 20,
                                    graphHeight: 300,
                                    averageOver: 1,
-                                   startingScale: 900,
-                                   from: "last_min",
+                                   startingScale: 9000,
+                                   from: "total_views",
                                    bgLineColor: "#514e57",
                                    tickLineColor: "#64616a",
                                    lineColors: {
