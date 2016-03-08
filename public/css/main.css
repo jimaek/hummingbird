@@ -8,9 +8,8 @@ body {
 
 div.topbar {
   position: relative;
-  height: 89px;
+  height: 320px;
   padding: 10px;
-  border-bottom: 1px solid #515d69;
 }
 
 div.topbar div.header h1 {
@@ -33,7 +32,12 @@ div.topbar #total {
   position: absolute;
   top: 0px;
   right: 0px;
-  left: 275px;
+  left: 20px;
+}
+
+#active {
+  padding-left: 20px;
+  color: #fff;
 }
 
 div.topbar #total div.graph {

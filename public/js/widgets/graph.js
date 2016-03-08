@@ -206,18 +206,18 @@ $.extend(Hummingbird.Graph.prototype, {
     var color = this.options.barColor || this.options.lineColors[this.scale] || this.options.lineColors.def;
     var lineHeight = this.graphHeight - height;
 
-    if(this.tick % (this.options.ratePerSecond * 2) == 0) { // Every 2 seconds
+    if(this.tick === 5) {
       this.element.attr('data-average', average);
 
       this.rescale(percent);
 
-      if(this.tick % 1000 == 0) { this.tick = 0; }
+      this.tick = 0;
 
       return;
     }
 
     var backgroundColor;
-    if(this.tick % this.options.ratePerSecond == 0) {
+    if(this.tick === 4) {
       backgroundColor = this.options.tickLineColor;
     } else {
       backgroundColor = this.options.bgLineColor;
